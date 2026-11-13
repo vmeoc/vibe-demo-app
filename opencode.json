@@ -1,0 +1,17 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "instructions": ["AGENTS.md", "CONTRACT.md"],
+  "permission": {
+    "edit": "allow",
+    "webfetch": "deny",
+    "bash": {
+      "*": "deny",
+      "../nkp-vibedemo-dashboard/scripts/status.sh *": "allow",
+      "../nkp-vibedemo-dashboard/scripts/validate.sh*": "allow",
+      "../nkp-vibedemo-dashboard/scripts/push.sh *": "ask",
+      "../nkp-vibedemo-dashboard/scripts/diag.sh*": "allow",
+      "ls*": "allow",
+      "cat *": "allow"
+    }
+  }
+}
